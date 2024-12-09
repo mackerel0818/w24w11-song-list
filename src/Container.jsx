@@ -25,7 +25,6 @@ const Container = (props) => {
             {`${props.song.title} (${props.song.singer})`}
           </div>
         </a>
-        {/* Rating을 FaStar Icon으로 출력 */}
         <div className="song-rating">
           {[...Array(props.song.rating)].map((_, index) => (
             <FaStar key={index} />
